@@ -22,7 +22,7 @@ export  class App extends Component {
 
     const hasDuplicates = contacts.some(
       ({ name, number }) =>
-        name.toLowerCase() === formData.name.toLowerCase() &&
+        name.toLowerCase() === formData.name.toLowerCase() || 
         number === formData.number
     );
     if (hasDuplicates) {
